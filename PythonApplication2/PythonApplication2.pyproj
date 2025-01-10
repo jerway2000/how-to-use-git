@@ -1,0 +1,62 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a1828a38-407a-4c1f-a1c3-c7877493790a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>day7\day7.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication2</Name>
+    <RootNamespace>PythonApplication2</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|AIlearning</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>
+    </CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="day5.py" />
+    <Compile Include="day4.py" />
+    <Compile Include="day3module.py" />
+    <Compile Include="day3.py" />
+    <Compile Include="day2.py" />
+    <Compile Include="day6.py" />
+    <Compile Include="day7\day7.py" />
+    <Compile Include="day7\day7module1.py" />
+    <Compile Include="day7\wd_message\__init__.py" />
+    <Compile Include="day7\wd_message\receive_message.py" />
+    <Compile Include="day7\wd_message\send_message.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|AIlearning" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="day7\" />
+    <Folder Include="day7\wd_message\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="day7\TextFile1.txt" />
+    <Content Include="day7\TextFile2.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
