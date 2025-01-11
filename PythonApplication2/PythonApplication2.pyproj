@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a1828a38-407a-4c1f-a1c3-c7877493790a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>day7\day7.py</StartupFile>
+    <StartupFile>day9.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,8 @@
     <Compile Include="day7\wd_message\__init__.py" />
     <Compile Include="day7\wd_message\receive_message.py" />
     <Compile Include="day7\wd_message\send_message.py" />
+    <Compile Include="day8.py" />
+    <Compile Include="day9.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|AIlearning" />
